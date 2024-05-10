@@ -8,7 +8,6 @@ So the goals of this project were to create a monorepo with to apps and a common
 
 ## Video of application
 
-<video src='' width=380/>
 ![Demo CountPages alpha](https://imgur.com/dD58QZu)
 As you can see, the drag and drop works fine.
 
