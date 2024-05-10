@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@jmc-monorepo/drag-drop": ["my-ui-lib/src/index.ts"]
+      "@jmc-monorepo/drag-drop": ["libs/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -2,7 +2,16 @@
   "name": "@jmc-monorepo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "nx:serve": "nx serve",
+    "nx:build": "nx build",
+    "nx:test": "nx test",
+    "nx:e2e": "nx e2e",
+    "nx:lint": "nx lint",
+    "nx:dep-graph": "nx dep-graph",
+    "nx:help": "nx help",
+    "postinstall": "node ./postinstall.js"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~17.3.0",
