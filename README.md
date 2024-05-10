@@ -8,7 +8,7 @@ So the goals of this project were to create a monorepo with to apps and a common
 
 ## Video of application
 
-![Demo CountPages alpha](https://imgur.com/E52gTkB.gif)
+![POC Video](https://imgur.com/E52gTkB.gif)
 As you can see, the drag and drop works fine.
 
 ## The dependency graph
@@ -24,6 +24,16 @@ As you can see, my-ui-lib (which contains the drag-drop feature component and se
 Running `nx run-many -t lint test build e2e-ci -p my-app my-second-app my-ui-lib` will fire off all tests, linting, and builds of all my apps and libs.
 
 ![NxCloud Results](https://imgur.com/EVe1M6I.png)
+
+## Storybook configuration
+
+Run the following
+
+`nx storybook my-ui-lib`
+
+This will let stakeholders, designers, and others to see and play with `DragDropComponent` and functionality in action as standalone stries in isolation!
+
+![Storybook Video](https://imgur.com/E52gTkB.gif)
 
 ## GitHub Actions
 
