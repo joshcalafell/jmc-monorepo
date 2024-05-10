@@ -27,13 +27,13 @@ Running `nx run-many -t lint test build e2e-ci -p my-app my-second-app my-ui-lib
 
 ## Storybook configuration
 
-Run the following
+![Storybook Video](https://imgur.com/MoECtBW.gif)
+
+To get this web tool running, run the following command:
 
 `nx storybook my-ui-lib`
 
 This will let stakeholders, designers, and others to see and play with `DragDropComponent` and functionality in action as standalone stries in isolation!
-
-![Storybook Video](https://imgur.com/E52gTkB.gif)
 
 ## GitHub Actions
 
