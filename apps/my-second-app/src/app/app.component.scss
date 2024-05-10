@@ -1,0 +1,106 @@
+/* drag-drop.component.scss */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.header p {
+  font-size: 16px;
+  color: #666;
+}
+
+.menu {
+  margin-bottom: 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 10px;
+
+  &:active {
+    background-color: #ff09ff;
+  }
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.content {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+:host {
+  display: block;
+  padding: 20px;
+}
+
+.drag-drop-container {
+  border: 2px dashed #ccc;
+  padding: 20px;
+}
+
+.drag-drop-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: move;
+  transition: background-color 0.3s ease;
+}
+
+.drag-drop-item.cdk-drag-preview {
+  opacity: 0.5;
+}
+
+.drag-drop-item.cdk-drag-placeholder {
+  background-color: transparent;
+  border: none;
+  min-height: auto;
+}
+
+.drag-drop-item:hover {
+  background-color: #e0e0e0;
+}
+
+.action-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}

@@ -17,8 +17,4 @@ export class AppComponent {
   author = '@joshcalafell'
 
   myItems = items
-
-  resetItems() {
-    this.myItems = items
-  }
 }

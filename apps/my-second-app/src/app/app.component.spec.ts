@@ -1,11 +1,11 @@
 import { TestBed } from '@angular/core/testing'
 import { AppComponent } from './app.component'
-import { RouterTestingModule } from '@angular/router/testing'
+import { RouterModule } from '@angular/router'
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent, RouterTestingModule],
+      imports: [RouterModule.forRoot([{ path: '', component: AppComponent }])],
     }).compileComponents()
   })
 
@@ -14,7 +14,7 @@ describe('AppComponent', () => {
     fixture.detectChanges()
     const compiled = fixture.nativeElement as HTMLElement
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Angular 17 / Drag and Drop Lib POC',
+      'Angular 17 / Drag and Drop Lib POCp',
     )
   })
 
