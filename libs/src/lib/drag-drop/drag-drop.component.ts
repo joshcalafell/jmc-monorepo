@@ -20,14 +20,21 @@ export class DragDropComponent implements OnInit {
 
   private dragDropService = inject(DragDropService)
 
-  ngOnInit() {
+  ngOnInit(): void {
     // Retrieve initial items from the service
     this.items = this.dragDropService.getItems()
   }
 
-  drop(event: CdkDragDrop<string[]>) {
+  drop(event: CdkDragDrop<string[]>): void {
     moveItemInArray(this.items, event.previousIndex, event.currentIndex)
     // Update the order of items in the service after drag and drop
     this.dragDropService.reorderItems(this.items)
+  }
+
+  reset(): void {
+    // Reset the items in the service
+    this.dragDropService.resetItems()
+    // Retrieve the updated items from the service
+    this.items = this.dragDropService.getItems()
   }
 }

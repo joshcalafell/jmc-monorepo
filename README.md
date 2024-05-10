@@ -13,7 +13,21 @@ As you can see, the drag and drop works fine.
 
 ## The dependency graph
 
-![See the Graph](https://imgur.com/A1Gbvw0.png)
+![Nx Graph Results](https://imgur.com/A1Gbvw0.png)
+
+You can run `nx graph` to see the following:
+
+As you can see, my-ui-lib (which contains the drag-drop feature component and service) is used by both `my-app` and `my-second-app`. As the app becomes more complex, this becoms very u seful.
+
+## Nx Cloud
+
+Running `nx run-many -t lint test build e2e-ci -p my-app my-second-app my-ui-lib` will fire off all tests, linting, and builds of all my apps and libs.
+
+![NxCloud Results](https://imgur.com/p1jqkKV.png)
+
+## GitHub Actions
+
+This project is set up to use node 20 for GitHub Actions
 
 ## Integrate with editors
 

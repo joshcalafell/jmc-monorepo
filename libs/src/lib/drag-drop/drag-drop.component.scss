@@ -8,16 +8,14 @@
 .drag-drop-item {
   background-color: #e5e5f7;
   opacity: 0.9;
-  background-image: radial-gradient(
-    rgb(47, 47, 45) 50px,
-    rgba(0, 0, 0, 0.819) 10px
-  );
+  background-image: radial-gradient(#3d3d3b 50px, rgba(28, 26, 26, 0.819) 10px);
   background-size: 200px 200px;
-  color: #71dae6;
-  border-color: #555;
-  border: solid 1px #555;
+  color: #eefb63;
+  border-color: #333;
+  border: solid 1px #333;
+  border-radius: 5px;
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 16px 0;
   cursor: move;
   transition: background-color 0.3s ease;
   font-family: 'Inter', sans-serif;
@@ -35,4 +33,14 @@
 
 .drag-drop-item:hover {
   background-color: #e0e0e0;
+}
+
+button {
+  color: black;
+  background: transparent;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
