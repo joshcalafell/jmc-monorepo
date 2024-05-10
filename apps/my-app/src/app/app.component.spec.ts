@@ -1,11 +1,15 @@
 import { TestBed } from '@angular/core/testing'
 import { RouterModule } from '@angular/router'
 import { AppComponent } from './app.component'
+import { DragDropComponent } from '@jmc-monorepo/drag-drop'
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterModule.forRoot([{ path: '', component: AppComponent }])],
+      imports: [
+        DragDropComponent,
+        RouterModule.forRoot([{ path: '/', component: AppComponent }]),
+      ],
     }).compileComponents()
   })
 
