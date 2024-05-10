@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router'
 import { DragDropComponent } from '@jmc-monorepo/drag-drop'
 
 const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']
+
 @Component({
   standalone: true,
   imports: [RouterModule, NgForOf, DragDropComponent],

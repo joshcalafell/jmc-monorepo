@@ -1,0 +1,11 @@
+<div
+  class="drag-drop-container"
+  cdkDropList
+  (cdkDropListDropped)="drop($event)"
+>
+  @for (item of items; track $index) {
+  <div cdkDrag class="drag-drop-item">
+    {{ item }}
+  </div>
+  }
+</div>
