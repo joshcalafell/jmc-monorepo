@@ -13,5 +13,4 @@ export class AppComponent {
   title = 'Angular 17 / Drag and Drop Lib POC'
   github_link = 'https://github.com/joshcalafell/jmc-monorepo'
   author = '@joshcalafell'
-  items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']
 }

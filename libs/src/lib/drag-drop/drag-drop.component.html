@@ -4,8 +4,9 @@
   (cdkDropListDropped)="drop($event)"
 >
   @for (item of items; track $index) {
+
   <div cdkDrag class="drag-drop-item">
-    {{ item }}
+    <div inert>{{ item }}</div>
   </div>
   }
 </div>
