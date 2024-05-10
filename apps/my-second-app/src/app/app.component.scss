@@ -6,6 +6,7 @@
   margin: 0 auto;
   padding: 20px;
   font-family: 'Inter', sans-serif;
+  background: white;
 }
 
 .header {
@@ -21,89 +22,13 @@
 
 .header p {
   font-size: 16px;
-  color: #666;
+  color: #555;
   font-family: 'Inter', sans-serif;
-}
-
-.menu {
-  margin-bottom: 20px;
-}
-
-.menu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu li {
-  display: inline-block;
-  margin-right: 10px;
-  font-family: 'Inter', sans-serif;
-
-  &:active {
-    background-color: #ff09ff;
-  }
-}
-
-.menu li:last-child {
-  margin-right: 0;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #333;
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.menu a:hover {
-  background-color: #f0f0f0;
 }
 
 .content {
-  border: 1px solid #ccc;
+  border: 1px solid #555;
   padding: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 5px;
-}
-
-:host {
-  display: block;
-  padding: 20px;
-}
-
-.drag-drop-container {
-  border: 2px dashed #ccc;
-  padding: 20px;
-}
-
-.drag-drop-item {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-  cursor: move;
-  transition: background-color 0.3s ease;
-}
-
-.drag-drop-item.cdk-drag-preview {
-  opacity: 0.5;
-}
-
-.drag-drop-item.cdk-drag-placeholder {
-  background-color: transparent;
-  border: none;
-  min-height: auto;
-}
-
-.drag-drop-item:hover {
-  background-color: #e0e0e0;
-}
-
-.action-row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
 }
