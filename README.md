@@ -8,13 +8,13 @@ So the goals of this project were to create a monorepo with to apps and a common
 
 ## Video of application
 
-[![Watch the video](<video src='https://imgur.com/dFjN3eT.mov' width=380 />)]
+[Imgur](https://imgur.com/dD58QZu)
 
 As you can see, the drag and drop works fine.
 
 ## The dependency graph
 
-![See the Graph](https://imgur.com/A1Gbvw0)
+[See the Graph](https://imgur.com/A1Gbvw0)
 
 ## Integrate with editors
 
