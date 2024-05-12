@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.drag-drop-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: move;
+  transition: background-color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    margin-right: 10px;
+    width: 75%;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .description {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .years-active {
+    font-size: 16px;
+    color: #f08080;
+  }
+}
+
+.drag-drop-item.cdk-drag-preview {
+  opacity: 0.5;
+}
+
+.drag-drop-item.cdk-drag-placeholder {
+  background-color: transparent;
+  border: none;
+  min-height: auto;
+}
+
+.drag-drop-item:hover {
+  background-color: #e0e0e0;
+}

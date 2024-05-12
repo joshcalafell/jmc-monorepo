@@ -1,28 +1,35 @@
 import { Injectable } from '@angular/core'
-
+import * as Genres from './drag-drop-items'
+import { __assign } from 'tslib'
+export interface ITechnoGenre {
+  id: number
+  name: string
+  description: string
+  yearsActive: string
+}
 @Injectable({
   providedIn: 'root',
 })
 export class DragDropService {
-  private items: string[] = []
+  private items: ITechnoGenre[] = []
 
   constructor() {
-    this.items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']
+    this.items = __assign([], Genres.default)
   }
 
-  setItems(items: string[]) {
+  setItems(items: ITechnoGenre[]) {
     this.items = items
   }
 
-  getItems(): string[] {
+  getItems(): ITechnoGenre[] {
     return this.items
   }
 
-  reorderItems(newOrder: string[]) {
+  reorderItems(newOrder: ITechnoGenre[]) {
     this.items = newOrder
   }
 
   resetItems() {
-    this.items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']
+    this.items = __assign(Genres.default)
   }
 }

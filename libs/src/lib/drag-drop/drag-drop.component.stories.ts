@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/angular'
 import { DragDropComponent } from './drag-drop.component'
 
-import { within } from '@storybook/testing-library'
 import { expect } from '@storybook/jest'
+import { within } from '@storybook/testing-library'
+import * as Genres from './service/drag-drop/drag-drop-items'
 
 const meta: Meta<DragDropComponent> = {
   component: DragDropComponent,
@@ -13,26 +14,28 @@ type Story = StoryObj<DragDropComponent>
 
 export const Primary: Story = {
   args: {
-    items: ['Item 1', 'Item 2', 'Item 3', 'Item 4'],
+    items: Genres.default,
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
-    expect(canvas.getByText(/Item 1/gi)).toBeTruthy()
-    expect(canvas.getByText(/Item 2/gi)).toBeTruthy()
-    expect(canvas.getByText(/Item 3/gi)).toBeTruthy()
-    expect(canvas.getByText(/Item 4/gi)).toBeTruthy()
+    expect(canvas.getByText(/Techno/gi)).toBeTruthy()
+    expect(canvas.getByText(/House/gi)).toBeTruthy()
+    expect(canvas.getByText(/Trance/gi)).toBeTruthy()
+    expect(canvas.getByText(/Dubstep/gi)).toBeTruthy()
+    expect(canvas.getByText(/Drum and Bass/gi)).toBeTruthy()
   },
 }
 
-export const Heading: Story = {
+export const DragDrop: Story = {
   args: {
-    items: ['Item 1', 'Item 2', 'Item 3', 'Item 4'],
+    items: Genres.default,
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
-    expect(canvas.getByText(/Item 1/gi)).toBeTruthy()
-    expect(canvas.getByText(/Item 2/gi)).toBeTruthy()
-    expect(canvas.getByText(/Item 3/gi)).toBeTruthy()
-    expect(canvas.getByText(/Item 4/gi)).toBeTruthy()
+    expect(canvas.getByText(/Techno/gi)).toBeTruthy()
+    expect(canvas.getByText(/House/gi)).toBeTruthy()
+    expect(canvas.getByText(/Trance/gi)).toBeTruthy()
+    expect(canvas.getByText(/Dubstep/gi)).toBeTruthy()
+    expect(canvas.getByText(/Drum and Bass/gi)).toBeTruthy()
   },
 }

@@ -1,0 +1,11 @@
+<div cdkDrag class="drag-drop-item" [id]="'item-' + item.id">
+  <div class="flex-row">
+    <div class="flex-column left">
+      <div inert class="title">{{ item.name }}</div>
+      <div inert class="decription">{{ item.description }}</div>
+    </div>
+    <div class="flex-column right">
+      <div inert class="years-active">{{ item.yearsActive }}</div>
+    </div>
+  </div>
+</div>

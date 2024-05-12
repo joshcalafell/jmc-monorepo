@@ -5,18 +5,22 @@ import {
 } from '@angular/cdk/drag-drop'
 import { CommonModule, NgForOf } from '@angular/common'
 import { Component, OnInit, inject } from '@angular/core'
-import { DragDropService } from './service/drag-drop/drag-drop.service'
+import {
+  DragDropService,
+  ITechnoGenre,
+} from './service/drag-drop/drag-drop.service'
+import { DragDropItemComponent } from './drag-drop-item/drag-drop-item.component'
 
 @Component({
   selector: 'lib-drag-drop',
   standalone: true,
-  imports: [CommonModule, DragDropModule, NgForOf],
+  imports: [CommonModule, DragDropItemComponent, DragDropModule, NgForOf],
   providers: [DragDropService], // Provide the DragDropService
   templateUrl: './drag-drop.component.html',
   styleUrl: './drag-drop.component.scss',
 })
 export class DragDropComponent implements OnInit {
-  items: string[] = []
+  items: ITechnoGenre[] = []
 
   private dragDropService = inject(DragDropService)
 

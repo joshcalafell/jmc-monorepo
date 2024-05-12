@@ -4,11 +4,7 @@
   (cdkDropListDropped)="drop($event)"
 >
   @for (item of items; track $index) {
-
-  <div cdkDrag class="drag-drop-item">
-    <div inert>{{ item }}</div>
-  </div>
-  }
+  <lib-drag-drop-item [item]="item"></lib-drag-drop-item> }
 
   <button (click)="reset()">Reset</button>
 </div>

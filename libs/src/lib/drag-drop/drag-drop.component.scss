@@ -5,29 +5,6 @@
   padding: 20px;
 }
 
-.drag-drop-item {
-  background-color: #f0f0f0;
-  padding: 16px;
-  margin: 16px;
-  cursor: move;
-  transition: background-color 0.3s ease;
-  font-family: 'Inter', sans-serif;
-}
-
-.drag-drop-item.cdk-drag-preview {
-  opacity: 0.5;
-}
-
-.drag-drop-item.cdk-drag-placeholder {
-  background-color: transparent;
-  border: none;
-  min-height: auto;
-}
-
-.drag-drop-item:hover {
-  background-color: #e0e0e0;
-}
-
 button {
   font-family: 'Inter', sans-serif;
   padding: 8px 16px;
