@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core'
-import * as Genres from './drag-drop-items'
-import { __assign } from 'tslib'
-export interface ITechnoGenre {
+import { Genres } from './drag-drop-items'
+
+export interface IArtMovements {
   id: number
   name: string
   description: string
@@ -11,25 +11,25 @@ export interface ITechnoGenre {
   providedIn: 'root',
 })
 export class DragDropService {
-  private items: ITechnoGenre[] = []
+  private items: IArtMovements[] = []
 
   constructor() {
-    this.items = __assign([], Genres.default)
+    this.items = Genres
   }
 
-  setItems(items: ITechnoGenre[]) {
+  setItems(items: IArtMovements[]) {
     this.items = items
   }
 
-  getItems(): ITechnoGenre[] {
+  getItems(): IArtMovements[] {
     return this.items
   }
 
-  reorderItems(newOrder: ITechnoGenre[]) {
+  reorderItems(newOrder: IArtMovements[]) {
     this.items = newOrder
   }
 
   resetItems() {
-    this.items = __assign(Genres.default)
+    this.items = this.items.sort((a, b) => a.id - b.id)
   }
 }

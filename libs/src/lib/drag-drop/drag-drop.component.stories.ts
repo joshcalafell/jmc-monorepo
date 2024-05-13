@@ -3,7 +3,7 @@ import { DragDropComponent } from './drag-drop.component'
 
 import { expect } from '@storybook/jest'
 import { within } from '@storybook/testing-library'
-import * as Genres from './service/drag-drop/drag-drop-items'
+import { Genres } from './service/drag-drop/drag-drop-items'
 
 const meta: Meta<DragDropComponent> = {
   component: DragDropComponent,
@@ -14,7 +14,7 @@ type Story = StoryObj<DragDropComponent>
 
 export const Primary: Story = {
   args: {
-    items: Genres.default,
+    items: Genres,
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
@@ -28,7 +28,7 @@ export const Primary: Story = {
 
 export const DragDrop: Story = {
   args: {
-    items: Genres.default,
+    items: Genres,
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)

@@ -7,7 +7,7 @@ import { CommonModule, NgForOf } from '@angular/common'
 import { Component, OnInit, inject } from '@angular/core'
 import {
   DragDropService,
-  ITechnoGenre,
+  IArtMovements,
 } from './service/drag-drop/drag-drop.service'
 import { DragDropItemComponent } from './drag-drop-item/drag-drop-item.component'
 
@@ -20,7 +20,7 @@ import { DragDropItemComponent } from './drag-drop-item/drag-drop-item.component
   styleUrl: './drag-drop.component.scss',
 })
 export class DragDropComponent implements OnInit {
-  items: ITechnoGenre[] = []
+  items: IArtMovements[] = []
 
   private dragDropService = inject(DragDropService)
 

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core'
 import { CommonModule } from '@angular/common'
-import { ITechnoGenre } from '../service/drag-drop/drag-drop.service'
+import { IArtMovements } from '../service/drag-drop/drag-drop.service'
 import { DragDropModule } from '@angular/cdk/drag-drop'
 
 @Component({
@@ -11,5 +11,5 @@ import { DragDropModule } from '@angular/cdk/drag-drop'
   styleUrl: './drag-drop-item.component.scss',
 })
 export class DragDropItemComponent {
-  @Input() item!: ITechnoGenre // Define the input property
+  @Input() item!: IArtMovements // Define the input property
 }
