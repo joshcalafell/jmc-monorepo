@@ -1,3 +1,4 @@
+@if (items && items.length > 0) {
 <div
   class="drag-drop-container"
   cdkDropList
@@ -8,3 +9,8 @@
 
   <button (click)="reset()">Reset</button>
 </div>
+} @else {
+<div class="drag-drop-container">
+  <div class="flex-row">No data available...</div>
+</div>
+}

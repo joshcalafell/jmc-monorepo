@@ -11,5 +11,5 @@ import { DragDropModule } from '@angular/cdk/drag-drop'
   styleUrl: './drag-drop-item.component.scss',
 })
 export class DragDropItemComponent {
-  @Input() item!: IArtMovements // Define the input property
+  @Input() item: IArtMovements = {} as IArtMovements
 }
