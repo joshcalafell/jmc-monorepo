@@ -20,4 +20,18 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance
     expect(app.title).toEqual('Angular 17 / Drag and Drop Lib POC')
   })
+
+  it('should render author', async () => {
+    const fixture = TestBed.createComponent(AppComponent)
+    const app = fixture.componentInstance
+    expect(app.author).toEqual('@joshcalafell')
+  })
+
+  it('should render github link', async () => {
+    const fixture = TestBed.createComponent(AppComponent)
+    const app = fixture.componentInstance
+    expect(app.github_link).toEqual(
+      'https://github.com/joshcalafell/jmc-monorepo',
+    )
+  })
 })
