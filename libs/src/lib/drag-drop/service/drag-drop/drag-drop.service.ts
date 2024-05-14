@@ -30,6 +30,8 @@ export class DragDropService {
   }
 
   resetItems() {
-    this.items = this.items.sort((a, b) => a.id - b.id)
+    this.items = this.items.sort(
+      (a: IArtMovements, b: IArtMovements) => a?.id - b?.id,
+    )
   }
 }
